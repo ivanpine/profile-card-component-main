@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font-main: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: 
+        url(https://digitshack.com/codepen/mentor4/bg-pattern-top.svg), 
+        url(https://digitshack.com/codepen/mentor4/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 
+        right 48vw bottom 40vh,
+        left 45vw top 44vh;
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-main);
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.card-head img{
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+.card-body img {
+   border-radius: 50%;
+   margin-top: -3.5rem;
+   border: 5px solid #FFF;
+}
+
+.card-body h1 {
+    font-size: 1.125rem;
+    color: var(--very-dark-desaturated-blue);
+    margin-top: 1rem;
+}
+
+.card-body span {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.card-body p {
+    color: var(--dark-grayish-blue);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--very-dark-desaturated-blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-foot h2 {
+    font-size: 1.125rem;
+}
+
+.card-foot p {
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.likes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
